@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Lab2</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="top-nav">
+                <h1>Restaurant</h1>
+                <ul>
+                    <li class="top-links"><a href="#" class="link-label">My dishes</a></li>
+                    <li class="top-links"><a href="#" class="link-label">Add dish</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="#" class="header__form">
+                    <input type="text" placeholder="Start searching..." class="header__searchbar" id="search-input">
+                    <button class="top-buttons" id="search-button">Search</button>
+                    <button class="top-buttons" id="clear-button">Clear</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <h2>Manage dishes</h2>
+        <div class="sorting-switch-container">
+            <h4>Sort by most expensive dish</h4>
+            <button class="sort-button" id="sort-button">
+                <div id="inner-switch"></div>
+            </button>
+        </div>
+        <hr>
+        <div class="aside__total-price">
+            <button class="aside__total-price-btn" id="total-price-btn">Total price</button>
+            <div class="price-results-block"> 
+                <p>Price:</p>
+                <p id="total-price-count"></p>
+            </div>
+        </div>
+        <button id="add-dish-btn">Add dish</button>  
+    </aside>
+    <main class="main__container" id="main__container">
+        <!-- Inserting items here -->
+    </main>
+    <script src="scripts/script.js" type="module"></script>
+</body>
+
+</html>
