@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>create</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="top-nav">
+                <h1>Restaurant</h1>
+                <ul>
+                    <li class="top-links"><a href="index.html" class="link-label">My dishes</a></li>
+                    <li class="top-links"><a href="#" class="link-label" id="add-dish-link">Add dish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="create-container">
+            <form class="create-form" id="create-form">
+                <h1 class="create-title">Add Dish</h1>
+
+                <div class="modal-content" id="modal_content">
+                    <div class="modal-body" id="modal_body">
+                        <p class="modal-text" id="modal_text">Incorrect values!</p>
+                        <span class="close-button" id="close_button">&times;</span>
+                    </div>
+                </div>
+
+                <label for="header-input">Header</label>
+                <input type="text" class="input-form" id="header_input" placeholder="Enter header...">
+
+                <label for="description-input">Description</label>
+                <textarea class="description-input" id="description_input" cols="30" rows="3"
+                    placeholder="Enter description..."></textarea>
+
+                <label for="prices">Price</label>
+                <input type="number" class="input-form" id="price_input" placeholder="Enter price...">
+
+                <button class="submit-button" id="create_button">Create</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/create.js" type="module"></script>
+</body>
+
+</html>
