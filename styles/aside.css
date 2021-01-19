@@ -78,13 +78,3 @@ hr{
 .price-results-block{
     display: flex;
 }
-#add-dish-btn{
-    width: 150px;
-    height: 40px;
-    color: white;
-    background-color: turquoise;
-    border: none;
-    border-radius: 15px;
-    position: relative;
-    left: 30%;
-}   
