@@ -13,6 +13,10 @@ h2{
     align-items: center;
     font-size: 26px;
     font-weight: 400;
+    color: rgb(100, 99, 99);
+}
+h4{
+    color: rgb(104, 100, 100);
 }
 .sorting-switch-container{
     display: flex;
@@ -24,6 +28,7 @@ h2{
 p{
     font-weight: 300;
     position: relative;
+    color: rgb(112, 109, 109);
     left: 30%;
 }
 hr{
@@ -63,6 +68,7 @@ hr{
     position: relative;
     left: 30%;
     background-color: turquoise;
+    color: white;
     width: 150px;
     height: 40px;
     border-radius: 15px;
@@ -75,6 +81,7 @@ hr{
 #add-dish-btn{
     width: 150px;
     height: 40px;
+    color: white;
     background-color: turquoise;
     border: none;
     border-radius: 15px;

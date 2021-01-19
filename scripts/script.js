@@ -1,7 +1,7 @@
 import {
     Dish,
     addDishes
-}from "./model.js"
+} from "./model.js"
 
 const addDishButton = document.getElementById('add-dish-btn')
 const searchButton = document.getElementById('search-button')
@@ -15,15 +15,15 @@ const dishesList = []
 let idCounter = 0
 let isSorted = false
 
-function updatePage(list){
+function updatePage(list) {
     let elements = mainContainer.querySelectorAll('.main__item')
-    for(var i = 0; i < elements.length; i++){elements[i].remove()}
+    for (var i = 0; i < elements.length; i++) { elements[i].remove() }
     for (var i = 0; i < list.length; i++) {
         let id = list.id
         let header = list[i].header
         let description = list[i].description
         let price = list[i].price
-        addDishes({id, header, description, price})
+        addDishes({ id, header, description, price })
     }
 }
 
@@ -35,7 +35,7 @@ addDishButton.addEventListener('click', () => {
     let price = Math.floor(Math.random() * 500)
     let dish = new Dish(id, header, description, price)
     dishesList.push(dish)
-    addDishes({id, header, description, price})
+    addDishes({ id, header, description, price })
     updatePage(dishesList)
     document.getElementById('search-input').value = ''
 })
@@ -43,7 +43,7 @@ addDishButton.addEventListener('click', () => {
 sortButton.addEventListener('click', () => {
     innerSwitch.classList.toggle("active")
     sortButton.classList.toggle("active")
-    if(isSorted){
+    if (isSorted) {
         updatePage(dishesList)
         isSorted = false
         return
@@ -63,7 +63,7 @@ searchButton.addEventListener('click', () => {
     let text = document.getElementById("search-input").value;
     let pattern = new RegExp(text)
     let filteredList = dishesList.filter(dish => pattern.test(dish.header) || pattern.test(dish.description)
-    || pattern.test(dish.price))
+        || pattern.test(dish.price))
     updatePage(filteredList)
 })
 
